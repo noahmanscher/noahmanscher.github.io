@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.412a8193.chunk.css",
+    "main.js": "./static/js/main.ef0103df.chunk.js",
+    "main.js.map": "./static/js/main.ef0103df.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.1af2f402.js",
+    "runtime-main.js.map": "./static/js/runtime-main.1af2f402.js.map",
+    "static/js/2.67bcd69d.chunk.js": "./static/js/2.67bcd69d.chunk.js",
+    "static/js/2.67bcd69d.chunk.js.map": "./static/js/2.67bcd69d.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.75ae2ca222b23d16ba20eedbaadd2199.js": "./precache-manifest.75ae2ca222b23d16ba20eedbaadd2199.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.412a8193.chunk.css.map": "./static/css/main.412a8193.chunk.css.map",
+    "static/js/2.67bcd69d.chunk.js.LICENSE.txt": "./static/js/2.67bcd69d.chunk.js.LICENSE.txt",
+    "static/media/fpvid.mp4": "./static/media/fpvid.c8fbf61d.mp4",
+    "static/media/logo-blur.png": "./static/media/logo-blur.cfa8d3f6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1af2f402.js",
+    "static/js/2.67bcd69d.chunk.js",
+    "static/css/main.412a8193.chunk.css",
+    "static/js/main.ef0103df.chunk.js"
+  ]
+}
