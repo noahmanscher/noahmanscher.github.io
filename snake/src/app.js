@@ -1,11 +1,17 @@
 let snake;
 let food;
+let ctx;
 const scl = 20;
+
+function mousePressed() {
+    snake.total++;
+}
 
 function setup() {
     createCanvas(600, 600);
-    frameRate(10);
-    // noStroke();
+    frameRate(1);
+    noStroke();
+    ctx = drawingContext;
 
     snake = new Snake();
     food = new Food();
@@ -15,12 +21,13 @@ function draw() {
     background(50);
 
     snake.update();
+    snake.show();
+
     if (snake.collision(food)) {
         food.move();
         snake.total++;
     }
-
-    snake.show();
+    
     food.show();
 
     showScore();
@@ -29,16 +36,20 @@ function draw() {
 function keyPressed() {
     switch(keyCode) {
         case 37:
-            if(snake.dir !== "RIGHT") snake.dir = "LEFT";
+        case 65:
+            if(snake.currentDir !== "RIGHT") snake.dir = "LEFT";
             break;
         case 38:
-            if(snake.dir !== "DOWN") snake.dir = "UP";
+        case 87:
+            if(snake.currentDir !== "DOWN") snake.dir = "UP";
             break;
         case 39:
-            if(snake.dir !== "LEFT") snake.dir = "RIGHT";
+        case 68:
+            if(snake.currentDir !== "LEFT") snake.dir = "RIGHT";
             break;
         case 40:
-            if(snake.dir !== "UP") snake.dir = "DOWN";
+        case 83:
+            if(snake.currentDir !== "UP") snake.dir = "DOWN";
             break;
     }
 }
