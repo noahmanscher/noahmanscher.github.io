@@ -3,13 +3,9 @@ let food;
 let ctx;
 const scl = 20;
 
-function mousePressed() {
-    snake.total++;
-}
-
 function setup() {
     createCanvas(600, 600);
-    frameRate(1);
+    frameRate(10);
     noStroke();
     ctx = drawingContext;
 
